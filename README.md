@@ -1,75 +1,45 @@
 # Flashcard - Android
 
-![Kotlin](https://img.shields.io/badge/Kotlin-1.17.0-7F52FF?logo=kotlin) ![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-2024.10.00-4285F4?logo=jetpackcompose) ![MVI Architecture](https://img.shields.io/badge/Architecture-MVI-FF6F61) ![Room DB](https://img.shields.io/badge/Room-2.8.4-3DDC84?logo=android) ![Dagger Hilt](https://img.shields.io/badge/Dagger_Hilt-2.51.1-007396?logo=dagger) ![Coroutines & Flow](https://img.shields.io/badge/Coroutines_&_Flow-blue?logo=kotlin)
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen.svg)](https://balazs-volcsei.github.io/flashcard-android/)
+[![Google Play](https://img.shields.io/badge/Google_Play-Coming_Soon-blue.svg)](#)
 
-This repository serves as a showcase for a modern, offline-first Android flashcard application. The source code is private, and this document details the architecture and technology stack.
-
-The app is currently in development. I continuously add new features, improving performance and stability.
-
-## About The Project
-
-This application provides a seamless and intuitive experience for creating, organizing, and studying flashcards. It is designed with a focus on a clean user interface, a reactive data flow, and a robust, scalable architecture.
-
-### Key Features
-
-*   **Full Content Management:** Create, read, update, and delete decks, flashcards, and organizational tags.
-*   **Offline-First:** The application is fully functional without an internet connection, ensuring data is always available.
-*   **Context-Aware UI:** The user interface dynamically adapts to user actions, presenting relevant options for searching, sorting, and bulk-editing content.
-*   **Advanced Interactions:** Includes an intuitive multi-select mode for batch operations and the ability to attach images to flashcards.
-*   **Consistent UX:** Creation and editing tasks are handled through a consistent and user-friendly bottom sheet interface.
-*   **Progress Tracking:** At-a-glance statistics showing completion percentages and remaining cards per deck.
-*   **Modern Gestures:** Intuitive swipe-to-action support for rapid deck and card management.
-
-## Architecture & Technology
-
-The application is built on a modern Android architecture that emphasizes separation of concerns, testability, and a unidirectional data flow.
-
-### MVI (Model-View-Intent)
-
-The core architecture follows the MVI pattern, providing a predictable state management loop. User actions are treated as intents, which are processed to produce an immutable state. The UI is a direct function of this state, ensuring consistency and simplifying debugging.
-
-### Tech Stack
-
-*   **UI Toolkit:** **Jetpack Compose** is used for the entire UI, creating a reactive and modern user experience.
-*   **Architecture:** **MVI**, **MVVM**, and **Repository Pattern**.
-*   **Asynchronicity:** **Kotlin Coroutines & Flow** are used throughout the app for managing background tasks and providing reactive data streams from the local database to the UI.
-*   **Dependency Injection:** **Dagger Hilt** manages dependencies, simplifying the architecture and improving testability.
-*   **Local Storage:** **Room** provides robust, offline-first data persistence, while **DataStore** handles user preferences.
-*   **Navigation:** **Compose Navigation** handles all in-app navigation within a single-activity structure.
-*   **Image Loading:** **Coil** efficiently loads and displays images.
-
-### Screenshots
-
-<p align="center">
-  <img width="281.6" height="594.8" alt="Screenshot_20260303_211110" src="https://github.com/user-attachments/assets/ac0e54be-3826-4357-8b77-9a3462a04ca9" />
-  <img width="281.6" height="594.8" alt="Screenshot_20260303_210751" src="https://github.com/user-attachments/assets/3e321bdf-2df2-4f1e-8d25-4553621607f1" />
-  <img width="281.6" height="594.8" alt="Screenshot_20260303_210804" src="https://github.com/user-attachments/assets/d51b6c99-8385-4adf-8068-456eed69ad15" />
-  
-  <br/>
-  <br/>
-  
-  <img width="281.6" height="594.8" alt="Screenshot_20260303_211343" src="https://github.com/user-attachments/assets/633056d3-2208-44ba-8cf1-a1b30d8bc336" />
-  <img width="281.6" height="594.8" alt="Screenshot_20260303_211325" src="https://github.com/user-attachments/assets/70956639-3f32-4149-a985-d076c671798c" />
-
-  <br/>
-  <br/>
-  
-  <img width="281.6" height="594.8" alt="Screenshot_20260217_010729" src="https://github.com/user-attachments/assets/7d734ac4-70c8-41fe-8fc7-80891bb84ca5" />
-  <img width="281.6" height="594.8" alt="Screenshot_20260215_020521" src="https://github.com/user-attachments/assets/916fb038-ec3e-45fc-9f67-6ea34d5e2761" />
-  <img width="281.6" height="594.8" alt="Screenshot_20260217_010339" src="https://github.com/user-attachments/assets/bee9cc02-f283-4cc5-a5a6-e105730fad6e" />
-
-## Developer
-
-**Balázs Völcsei**  
-*Android Developer*
-
-- **LinkedIn:** [balazs-volcsei](https://www.linkedin.com/in/balazs-volcsei/)
-- **Website:** [balazs-volcsei](https://sites.google.com/view/balazs-volcsei/home)
-- **Email:** balazs.volcsei@gmail.com
+> **Looking for the official project page?**  
+> Visit the official website: [balazs-volcsei.github.io/flashcard-android](https://balazs-volcsei.github.io/flashcard-android/)
 
 ---
 
+**Flashcard** is a fast, clean, and 100% offline study application designed for Android. Built with modern Android tools, it provides a seamless experience for creating custom decks, organizing cards with tags, and mastering study material with reactive state management and smart progress tracking.
+
+![Android](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android) ![Kotlin](https://img.shields.io/badge/Kotlin-1.17.0-7F52FF?logo=kotlin) ![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-2024.10.00-4285F4?logo=jetpackcompose) ![MVI Architecture](https://img.shields.io/badge/Architecture-MVI-FF6F61) ![Room DB](https://img.shields.io/badge/Room-2.8.4-3DDC84?logo=android) ![Dagger Hilt](https://img.shields.io/badge/Dagger_Hilt-2.51.1-007396?logo=dagger) ![Coroutines & Flow](https://img.shields.io/badge/Coroutines_&_Flow-blue?logo=kotlin)
+
+## Key Features
+
+- **Full Content Management:** Create, read, update, and delete decks, flashcards, and organizational tags through a consistent bottom-sheet interface.
+- **Offline First:** Fully functional without an internet connection, ensuring study decks and progress are always available.
+- **Modern UI/UX:** Fully designed with **Material 3** and **Jetpack Compose**, featuring smooth animations and intuitive swipe-to-action gestures.
+- **Context-Aware & Batch Operations:** Dynamic search, sorting, and multi-select batch editing for managing large study decks effortlessly.
+- **Rich Media Cards:** Attach images to flashcards for visual learning, powered by fast local caching.
+- **Progress Tracking:** At-a-glance statistics showing completion percentages and remaining cards per deck.
+
+## Tech Stack
+
+- **UI:** Jetpack Compose with Material 3.
+- **Architecture:** Clean Architecture with MVI & MVVM + Repository Pattern.
+- **Asynchronicity:** Kotlin Coroutines & Flow.
+- **Dependency Injection:** Dagger Hilt.
+- **Local Storage:** Room Database for persistence & DataStore for user preferences.
+- **Navigation:** Compose Navigation (single-activity structure).
+- **Image Loading:** Coil.
+
+## Screenshots
+
+<p align="center">
+<img width="1280" height="720" alt="flashcard-social-preview" src="docs/social-preview.jpg" />
+</p>
+<br/>
+
 ## Roadmap
+
 - [x] Core MVI Architecture and Room Setup
 - [x] Implementing Search and Sort Functions
 - [x] Multi-select and Batch Editing
@@ -82,10 +52,10 @@ The core architecture follows the MVI pattern, providing a predictable state man
 ## Recent Updates
 
 ### 3 March 2026
-- Implemented basic learning logics with statistics. 
+- Implemented basic learning logic with statistics.
 - Improved UX/UI experience.
 - Added swipe actions to deck and flashcard list items.
-- Enhanced animations accross the application.
+- Enhanced animations across the application.
 - Bug fixes and performance improvements.
 
 ### 23 February 2026
@@ -96,3 +66,15 @@ The core architecture follows the MVI pattern, providing a predictable state man
 - Implemented core MVI architecture and Room database persistence.
 - Added reactive search and sort functionality.
 - Added batch-edit mode for deck and card management.
+
+## Developer
+
+**Völcsei Balázs E.V.**  
+*Android Developer*
+
+- **Portfolio:** [balazs-volcsei.github.io](https://balazs-volcsei.github.io/)
+- **LinkedIn:** [balazs-volcsei](https://www.linkedin.com/in/balazs-volcsei/)
+- **Email:** balazs.volcsei@gmail.com
+
+---
+*Flashcard - Create. Learn. Pass.*
